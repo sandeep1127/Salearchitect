@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Salesarchitect" >
+
+
+<listeners>
+<listener class-name= "WebApp.Salesarchitect.Utility.FailedTestCases"/> 
+</listeners>
+
+
+  <test name="SalesArchitectTestCases">
+    <classes>
+      <class name="WebApp.Salesarchitect.testcases.HomePageTestCases"/>
+      <class name="WebApp.Salesarchitect.testcases.LoginPageTestCases"/>
+      <class name="WebApp.Salesarchitect.BaseClass.WebBase"/>
+    </classes>
+  </test> <!-- Test2 -->
+</suite> <!-- Suite -->

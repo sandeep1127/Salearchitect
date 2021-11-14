@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Salesarchitect Admin Panel Test Suite]">
+  <test name="Salesarchitect Test cases">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="WebApp.Salesarchitect.testcases.LoginPageTestCases"/>
+    </classes>
+  </test> <!-- Salesarchitect Test cases -->
+  <test name="Salesarchitect Test cases(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="WebApp.Salesarchitect.testcases.LoginPageTestCases">
+        <methods>
+          <include name="InValidLoginTest"/>
+          <include name="testCommunityAdminValidLogin"/>
+          <include name="PartnerSuperAdminValidLoginTest"/>
+          <include name="SalesRepAdminValidLoginTest"/>
+          <include name="SalesEditorAdminValidLoginTest"/>
+          <include name="SuperAdminValidLoginTest"/>
+        </methods>
+      </class> <!-- WebApp.Salesarchitect.testcases.LoginPageTestCases -->
+    </classes>
+  </test> <!-- Salesarchitect Test cases(failed) -->
+</suite> <!-- Failed suite [Salesarchitect Admin Panel Test Suite] -->

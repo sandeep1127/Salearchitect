@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test2">
+    <classes>
+      <class name="WebApp.Salesarchitect.testcases.HomePageTestCases"/>
+      <class name="WebApp.Salesarchitect.testcases.LoginPageTestCases"/>
+      <class name="WebApp.Salesarchitect.BaseClass.WebBase"/>
+    </classes>
+  </test> <!-- Test2 -->
+</suite> <!-- Failed suite [Suite] -->
