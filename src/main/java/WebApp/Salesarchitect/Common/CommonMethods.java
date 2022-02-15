@@ -1,16 +1,20 @@
 package WebApp.Salesarchitect.Common;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.commons.compress.archivers.dump.InvalidFormatException;
-import org.apache.poi.sl.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.tools.ant.util.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,13 +31,16 @@ public class CommonMethods extends WebBase{
 	}
 	
 	public static JavascriptExecutor js;
+	public static String TESTDATA_SHEET_PATH ="E:\\SandeepJavaWorkspace\\Salesarchitect\\TestData\\SeleniumLotData.xlsx";
+	static Workbook book;
+	public static org.apache.poi.ss.usermodel.Sheet sheet;
+
 	
 	
 	
 	
-	
-	// METHOD >> To Scroll to a Particular Web element via Java ScriptExecutor
-	public static void scrollToElement(WebElement webElementXpath) throws InterruptedException{
+	// METHOD >> To Scroll to a Particular Web element and click it via Java Script Executor
+	public static void scrollToElementClick(WebElement webElementXpath) throws InterruptedException{
 		js = (JavascriptExecutor) driver;
 		
 		js.executeScript("arguments[0].scrollIntoView(true)", webElementXpath); 
@@ -60,13 +67,35 @@ public class CommonMethods extends WebBase{
 		
 	}
 	
-	// Method >> To use DataProvider
 	
-	static String filePath = "E:\\SandeepJavaWorkspace\\Salesarchitect\\TestData\\SeleniumLotData.xlsx";
+	// METHOD >> This method has been used in WebEventListner class to take screenshot only when some exception OR error occurs.
+	
+	public  static void takeScreenshotAtEndOfTest() throws IOException {
+		//File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		
+		
+	//	String currentDir = System.getProperty("user.dir");
+	
+		
+		
+	//FileUtils.copyFile(scrFile, new File(currentDir + "/ErrorScreenshots/" + System.currentTimeMillis() + ".png"));    //FILEUTILS here is giving error at present so i used the FileHandler class in below line but it doesnt work
+	//	FileHandler.copy(scrFile, new File("E:\\SandeepJavaWorkspace\\Salesarchitect\\FailedScreenShots" + System.currentTimeMillis() + ".png"));
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	// Method >> To use DataProvider to fetch data from Excel:-
+	
+	/*static String filePath = "E:\\SandeepJavaWorkspace\\Salesarchitect\\TestData\\SeleniumLotData.xlsx";
 
 	private static String TEST_DATA_SHEET = filePath;
 	private static Workbook book;
-	private static Sheet sheet;
+	private static org.apache.poi.ss.usermodel.Sheet sheet;
 
 	public static Object[][] getTestData(String sheetName) {
 
@@ -94,9 +123,39 @@ public class CommonMethods extends WebBase{
 		}
 
 		return data;
-	}
+	} */
 	
 	
+	// Method >> To use DataProvider to fetch data from Excel:- ( NAVEEN's CODE)
+	
+ public static Object[][] getTestData(String sheetName) {
+		FileInputStream file = null;
+		try {
+			file = new FileInputStream(TESTDATA_SHEET_PATH);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			book = WorkbookFactory.create(file);
+		} catch (InvalidFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		sheet= book.getSheet(sheetName);
+		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+		// System.out.println(sheet.getLastRowNum() + "--------" +
+		// sheet.getRow(0).getLastCellNum());
+		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
+				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+				// System.out.println(data[i][k]);
+			}
+		}
+		return data;
 	
 	
+ }
+ 
+
 }

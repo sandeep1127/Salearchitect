@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SalesArchitectTestCases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/1/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/2/6</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 25 20:30:20 IST 2021</td>
+<td>Started on:</td><td>Wed Feb 09 23:33:05 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>550 seconds (550506 ms)</td>
+<tr><td>Total time:</td><td>789 seconds (789889 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,41 +75,38 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest()'><b>logOffLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log off&apos;]&quot;}
-  (Session info: chrome=95.0.4638.54)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest()'><b>geoSpatialSitePlanJsonLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.82)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.16.13.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 344720a8cde58010d6a540825f785f9f
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log off&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dabf36644aab5a2e40d237460807ac04
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at WebApp.Salesarchitect.Pages.HomePage.logOffLink(HomePage.java:106)
-	at WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest(HomePageTestCases.java:90)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1429133319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1429133319'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log off&apos;]&quot;}
-  (Session info: chrome=95.0.4638.54)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at WebApp.Salesarchitect.Common.CommonMethods.scrollToElementClick(CommonMethods.java:48)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanJsonLink(HomePage.java:558)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest(HomePageTestCases.java:193)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace153448497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace153448497'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.82)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.16.13.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 344720a8cde58010d6a540825f785f9f
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log off&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dabf36644aab5a2e40d237460807ac04
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -120,15 +117,22 @@ Session ID: 344720a8cde58010d6a540825f785f9f
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at WebApp.Salesarchitect.Pages.HomePage.logOffLink(HomePage.java:106)
-	at WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest(HomePageTestCases.java:90)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at WebApp.Salesarchitect.Common.CommonMethods.scrollToElementClick(CommonMethods.java:48)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanJsonLink(HomePage.java:558)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest(HomePageTestCases.java:193)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -155,129 +159,18 @@ Session ID: 344720a8cde58010d6a540825f785f9f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>21</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
 <tr>
-<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.InValidLoginTest()'><b>InValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
-<td></td>
-<td>0</td>
-<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@5ba23b66</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.PartnerSuperAdminValidLoginTest()'><b>PartnerSuperAdminValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
-<td></td>
-<td>10</td>
-<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@5ba23b66</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.SalesEditorAdminValidLoginTest()'><b>SalesEditorAdminValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
-<td></td>
-<td>10</td>
-<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@5ba23b66</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.SalesRepAdminValidLoginTest()'><b>SalesRepAdminValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
-<td></td>
-<td>11</td>
-<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@5ba23b66</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.SuperAdminValidLoginTest()'><b>SuperAdminValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
-<td></td>
-<td>11</td>
-<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@5ba23b66</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.clearSearchLinkTest()'><b>clearSearchLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>15</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.clickNewHomeNavigatorLinkTest()'><b>clickNewHomeNavigatorLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>2</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.communitySearchBoxByBuilderNameTest()'><b>communitySearchBoxByBuilderNameTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>6</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.communitySearchBoxByCommunityNameTest()'><b>communitySearchBoxByCommunityNameTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>8</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.isApikeyValueTest()'><b>isApikeyValueTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>3</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageAppsTest()'><b>manageAppsTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>1</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageProspectsButtonTest()'><b>manageProspectsButtonTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>5</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageUsersLinkTest()'><b>manageUsersLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>2</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.navigatorReportsButtonTest()'><b>navigatorReportsButtonTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>8</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.partnerConfigurationLinkTest()'><b>partnerConfigurationLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>3</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.testCommunityAdminValidLogin()'><b>testCommunityAdminValidLogin</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
-<td></td>
-<td>10</td>
-<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@5ba23b66</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>0</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.verifyNextPagerIconTest()'><b>verifyNextPagerIconTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>10</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.verifyUserNameTest()'><b>verifyUserNameTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td></td>
-<td>0</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest()'><b>logOffLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log off&apos;]&quot;}
-  (Session info: chrome=95.0.4638.54)
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel()'><b>manageLotsFillDataTestExcel</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases<br>Parameters: Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium added text. Lot is ready for Sale xl, House no -3600, Law lane xl, Https://www.facebook.com, Selenium LinkXL</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@id=&apos;531533&apos;]//td&quot;}
+  (Session info: chrome=98.0.4758.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.16.13.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf135a3ebdbcdffaf9cc7c64432c8bbf
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log off&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8080ce8b199cf97b99bc52172d113f
+*** Element info: {Using=xpath, value=//tr[@id=&apos;531533&apos;]//td}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -288,21 +181,21 @@ Session ID: cf135a3ebdbcdffaf9cc7c64432c8bbf
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at WebApp.Salesarchitect.Pages.HomePage.logOffLink(HomePage.java:106)
-	at WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest(HomePageTestCases.java:90)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace425275537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace425275537'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log off&apos;]&quot;}
-  (Session info: chrome=95.0.4638.54)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at WebApp.Salesarchitect.Pages.HomePage.ManageLotsFillDataExcel(HomePage.java:472)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel(HomePageTestCases.java:229)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948689480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948689480'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@id=&apos;531533&apos;]//td&quot;}
+  (Session info: chrome=98.0.4758.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.16.13.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf135a3ebdbcdffaf9cc7c64432c8bbf
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log off&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8080ce8b199cf97b99bc52172d113f
+*** Element info: {Using=xpath, value=//tr[@id=&apos;531533&apos;]//td}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -317,11 +210,500 @@ Session ID: cf135a3ebdbcdffaf9cc7c64432c8bbf
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at WebApp.Salesarchitect.Pages.HomePage.logOffLink(HomePage.java:106)
-	at WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest(HomePageTestCases.java:90)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at WebApp.Salesarchitect.Pages.HomePage.ManageLotsFillDataExcel(HomePage.java:472)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel(HomePageTestCases.java:229)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:967)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>22</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.InValidLoginTest()'><b>InValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@19dfb72a</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.PartnerSuperAdminValidLoginTest()'><b>PartnerSuperAdminValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
+<td></td>
+<td>7</td>
+<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@19dfb72a</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.SalesEditorAdminValidLoginTest()'><b>SalesEditorAdminValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
+<td></td>
+<td>7</td>
+<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@19dfb72a</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.SalesRepAdminValidLoginTest()'><b>SalesRepAdminValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
+<td></td>
+<td>7</td>
+<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@19dfb72a</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.SuperAdminValidLoginTest()'><b>SuperAdminValidLoginTest</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
+<td></td>
+<td>7</td>
+<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@19dfb72a</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.clearSearchLinkTest()'><b>clearSearchLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>9</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.clickNewHomeNavigatorLinkTest()'><b>clickNewHomeNavigatorLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>8</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.communitySearchBoxByBuilderNameTest()'><b>communitySearchBoxByBuilderNameTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>12</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.communitySearchBoxByCommunityNameTest()'><b>communitySearchBoxByCommunityNameTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>6</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.deleteAllLotsInfoLinkTest()'><b>deleteAllLotsInfoLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>8</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanSvgGeoLinkTest()'><b>geoSpatialSitePlanSvgGeoLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>9</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.isApikeyValueTest()'><b>isApikeyValueTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>3</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.logOffTest()'><b>logOffTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>0</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageAppsTest()'><b>manageAppsTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>3</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageProspectsButtonTest()'><b>manageProspectsButtonTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>5</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageUsersLinkTest()'><b>manageUsersLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>2</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.navigatorReportsButtonTest()'><b>navigatorReportsButtonTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>4</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.partnerConfigurationLinkTest()'><b>partnerConfigurationLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>2</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.siteOverviewLinkTest()'><b>siteOverviewLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>16</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.sitePreviewLinkTest()'><b>sitePreviewLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>11</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.LoginPageTestCases.testCommunityAdminValidLogin()'><b>testCommunityAdminValidLogin</b><br>Test class: WebApp.Salesarchitect.testcases.LoginPageTestCases</td>
+<td></td>
+<td>7</td>
+<td>WebApp.Salesarchitect.testcases.LoginPageTestCases@19dfb72a</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.uploadSVGTest()'><b>uploadSVGTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>29</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>0</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.verifyNextPagerIconTest()'><b>verifyNextPagerIconTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>8</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.verifyUserNameTest()'><b>verifyUserNameTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td></td>
+<td>0</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest()'><b>geoSpatialSitePlanJsonLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.82)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6762cdff184f13b490bba9f0ae42462c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at WebApp.Salesarchitect.Common.CommonMethods.scrollToElementClick(CommonMethods.java:48)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanJsonLink(HomePage.java:558)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest(HomePageTestCases.java:193)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1476235721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1476235721'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.82)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6762cdff184f13b490bba9f0ae42462c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at WebApp.Salesarchitect.Common.CommonMethods.scrollToElementClick(CommonMethods.java:48)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanJsonLink(HomePage.java:558)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest(HomePageTestCases.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>21</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest()'><b>geoSpatialSitePlanJsonLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.82)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9684bda6e74d2da957fa4588aae2d2b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at WebApp.Salesarchitect.Common.CommonMethods.scrollToElementClick(CommonMethods.java:48)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanJsonLink(HomePage.java:558)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest(HomePageTestCases.java:193)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1663488386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1663488386'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.82)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9684bda6e74d2da957fa4588aae2d2b3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at WebApp.Salesarchitect.Common.CommonMethods.scrollToElementClick(CommonMethods.java:48)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanJsonLink(HomePage.java:558)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest(HomePageTestCases.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:967)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>21</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest()'><b>geoSpatialSitePlanJsonLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.82)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 49c1d0b09e5f93ca65c3b4324886479d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at WebApp.Salesarchitect.Common.CommonMethods.scrollToElementClick(CommonMethods.java:48)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanJsonLink(HomePage.java:558)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest(HomePageTestCases.java:193)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace345290829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace345290829'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.82)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 49c1d0b09e5f93ca65c3b4324886479d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at WebApp.Salesarchitect.Common.CommonMethods.scrollToElementClick(CommonMethods.java:48)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanJsonLink(HomePage.java:558)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanJsonLinkTest(HomePageTestCases.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:967)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>21</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
+<tr>
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel()'><b>manageLotsFillDataTestExcel</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases<br>Parameters: Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium added text. Lot is ready for Sale xl, House no -3600, Law lane xl, Https://www.facebook.com, Selenium LinkXL</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@id=&apos;531533&apos;]//td&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63521}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d321cab4689842a1bfac8a6def6840c9
+*** Element info: {Using=xpath, value=//tr[@id=&apos;531533&apos;]//td}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at WebApp.Salesarchitect.Pages.HomePage.ManageLotsFillDataExcel(HomePage.java:472)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel(HomePageTestCases.java:229)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace707892422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace707892422'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@id=&apos;531533&apos;]//td&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63521}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d321cab4689842a1bfac8a6def6840c9
+*** Element info: {Using=xpath, value=//tr[@id=&apos;531533&apos;]//td}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at WebApp.Salesarchitect.Pages.HomePage.ManageLotsFillDataExcel(HomePage.java:472)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel(HomePageTestCases.java:229)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -348,18 +730,18 @@ Session ID: cf135a3ebdbcdffaf9cc7c64432c8bbf
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>22</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
 <tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest()'><b>logOffLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log off&apos;]&quot;}
-  (Session info: chrome=95.0.4638.54)
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel()'><b>manageLotsFillDataTestExcel</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases<br>Parameters: Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium added text. Lot is ready for Sale xl, House no -3600, Law lane xl, Https://www.facebook.com, Selenium LinkXL</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@id=&apos;531533&apos;]//td&quot;}
+  (Session info: chrome=98.0.4758.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.16.13.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62057}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: de2ca14b5e1d252bf142dad90999627a
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log off&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 63b6307ba70255043d02ccee6e469470
+*** Element info: {Using=xpath, value=//tr[@id=&apos;531533&apos;]//td}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -370,21 +752,21 @@ Session ID: de2ca14b5e1d252bf142dad90999627a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at WebApp.Salesarchitect.Pages.HomePage.logOffLink(HomePage.java:106)
-	at WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest(HomePageTestCases.java:90)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace101601906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace101601906'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log off&apos;]&quot;}
-  (Session info: chrome=95.0.4638.54)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at WebApp.Salesarchitect.Pages.HomePage.ManageLotsFillDataExcel(HomePage.java:472)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel(HomePageTestCases.java:229)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1760622380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1760622380'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@id=&apos;531533&apos;]//td&quot;}
+  (Session info: chrome=98.0.4758.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.16.13.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62057}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: de2ca14b5e1d252bf142dad90999627a
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log off&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 63b6307ba70255043d02ccee6e469470
+*** Element info: {Using=xpath, value=//tr[@id=&apos;531533&apos;]//td}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -399,11 +781,14 @@ Session ID: de2ca14b5e1d252bf142dad90999627a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at WebApp.Salesarchitect.Pages.HomePage.logOffLink(HomePage.java:106)
-	at WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest(HomePageTestCases.java:90)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at WebApp.Salesarchitect.Pages.HomePage.ManageLotsFillDataExcel(HomePage.java:472)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel(HomePageTestCases.java:229)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -430,18 +815,18 @@ Session ID: de2ca14b5e1d252bf142dad90999627a
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>22</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
 <tr>
-<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest()'><b>logOffLinkTest</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log off&apos;]&quot;}
-  (Session info: chrome=95.0.4638.54)
+<td title='WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel()'><b>manageLotsFillDataTestExcel</b><br>Test class: WebApp.Salesarchitect.testcases.HomePageTestCases<br>Parameters: Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium added text. Lot is ready for Sale xl, House no -3600, Law lane xl, Https://www.facebook.com, Selenium LinkXL</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@id=&apos;531533&apos;]//td&quot;}
+  (Session info: chrome=98.0.4758.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.16.13.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b4efecd45d81703cc29da84d998c1f2
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log off&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63652}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee7dc119b261bc57a230170f0c6c0a52
+*** Element info: {Using=xpath, value=//tr[@id=&apos;531533&apos;]//td}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -452,21 +837,21 @@ Session ID: 8b4efecd45d81703cc29da84d998c1f2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at WebApp.Salesarchitect.Pages.HomePage.logOffLink(HomePage.java:106)
-	at WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest(HomePageTestCases.java:90)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181191753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1181191753'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log off&apos;]&quot;}
-  (Session info: chrome=95.0.4638.54)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at WebApp.Salesarchitect.Pages.HomePage.ManageLotsFillDataExcel(HomePage.java:472)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel(HomePageTestCases.java:229)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1818090701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1818090701'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@id=&apos;531533&apos;]//td&quot;}
+  (Session info: chrome=98.0.4758.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.16.13.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b4efecd45d81703cc29da84d998c1f2
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log off&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63652}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee7dc119b261bc57a230170f0c6c0a52
+*** Element info: {Using=xpath, value=//tr[@id=&apos;531533&apos;]//td}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -481,11 +866,14 @@ Session ID: 8b4efecd45d81703cc29da84d998c1f2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at WebApp.Salesarchitect.Pages.HomePage.logOffLink(HomePage.java:106)
-	at WebApp.Salesarchitect.testcases.HomePageTestCases.logOffLinkTest(HomePageTestCases.java:90)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at WebApp.Salesarchitect.Pages.HomePage.ManageLotsFillDataExcel(HomePage.java:472)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.manageLotsFillDataTestExcel(HomePageTestCases.java:229)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -511,8 +899,8 @@ Session ID: 8b4efecd45d81703cc29da84d998c1f2
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
-<td>21</td>
-<td>WebApp.Salesarchitect.testcases.HomePageTestCases@6debcae2</td></tr>
+<td>22</td>
+<td>WebApp.Salesarchitect.testcases.HomePageTestCases@57829d67</td></tr>
 </table><p>
 </body>
 </html>

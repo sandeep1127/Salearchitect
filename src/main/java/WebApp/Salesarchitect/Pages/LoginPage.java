@@ -43,7 +43,7 @@ public HomePage superAdminValidLogin(String un, String pwd) throws IOException{
 	    username.sendKeys(un);         // this value will be coming from properties file
 		password.sendKeys(pwd);
 		submitButton.click();
-		return new HomePage();      // It is returning HomePage class object because landing page of Login Page is Homepage.
+		return new HomePage();      // It is returning HomePage class object because landing page of Login Page is Home page.
 	}
 		
 public void partnerSuperAdminvalidLogin(){

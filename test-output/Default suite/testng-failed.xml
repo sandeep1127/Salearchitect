@@ -5,7 +5,7 @@
     <classes>
       <class name="WebApp.Salesarchitect.testcases.HomePageTestCases">
         <methods>
-          <include name="siteOverviewLinkTest"/>
+          <include name="geoSpatialSitePlanJsonLinkTest"/>
         </methods>
       </class> <!-- WebApp.Salesarchitect.testcases.HomePageTestCases -->
     </classes>
@@ -14,7 +14,7 @@
     <classes>
       <class name="WebApp.Salesarchitect.testcases.HomePageTestCases">
         <methods>
-          <include name="siteOverviewLinkTest"/>
+          <include name="geoSpatialSitePlanJsonLinkTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

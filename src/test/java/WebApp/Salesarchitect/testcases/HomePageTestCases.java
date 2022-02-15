@@ -1,14 +1,18 @@
 package WebApp.Salesarchitect.testcases;
 
+import java.awt.AWTException;
 import java.io.IOException;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import WebApp.Salesarchitect.BaseClass.WebBase;
+import WebApp.Salesarchitect.Common.CommonMethods;
 import WebApp.Salesarchitect.Pages.HomePage;
 import WebApp.Salesarchitect.Pages.LoginPage;
 import WebApp.Salesarchitect.Pages.ManageAppsPage;
@@ -17,6 +21,7 @@ import WebApp.Salesarchitect.Pages.ManageUsersPage;
 import WebApp.Salesarchitect.Pages.NavigatorReportsPage;
 import WebApp.Salesarchitect.Pages.NewHomeNavigatorPage;
 import WebApp.Salesarchitect.Pages.PartnerConfigurationPage;
+@Listeners(CustomListener.class)
 
 public class HomePageTestCases extends WebBase{
 
@@ -28,6 +33,8 @@ public class HomePageTestCases extends WebBase{
 	ManageProspectsPage manageProspectspage;
 	ManageAppsPage manageAppsPage;
 	NavigatorReportsPage navigatorReportsPage;
+	
+	String sheetName="LotData";
 	
 	
 	public HomePageTestCases() throws IOException  {               // STEP 1 : Call Constructor of BASE class to initialize Properties file. Otherwise it will give null point exception
@@ -80,6 +87,7 @@ public class HomePageTestCases extends WebBase{
 	@Test(groups="Regression" , priority =4)
 	public void manageUsersLinkTest() throws IOException{
 		manageUsers= homepage.manageUsersLink();
+		
 	}
 	
 	@Test(groups="Regression" , priority =5)
@@ -121,7 +129,7 @@ public class HomePageTestCases extends WebBase{
 		navigatorReportsPage=homepage.navigatorReportsButton();
 	}
 	
-	
+
 	
 	@Test
 	public void communitySearchBoxByCommunityNameTest() throws InterruptedException{
@@ -132,7 +140,7 @@ public class HomePageTestCases extends WebBase{
 	@Test
 	public void communitySearchBoxByBuilderNameTest() throws InterruptedException{
 		System.out.println(homepage.communitySearchBoxByBuilderName());
-	//Assert.assertTrue(homepage.communitySearchBoxByBuilderName());;
+	Assert.assertTrue(homepage.communitySearchBoxByBuilderName());;
 	}
 	
 	@Test
@@ -161,23 +169,87 @@ public class HomePageTestCases extends WebBase{
 	@Test
 	public void siteOverviewLinkTest() throws InterruptedException, IOException{
 	
-		homepage.siteOverviewLink();
-		Thread.sleep(2000);
+	//	String pageTitle=	homepage.siteOverviewLink();	
+	//Assert.assertEquals(pageTitle, "Brandon Park", "The Title of the window doesn't match");
+	
+		Assert.assertTrue(homepage.siteOverviewLink(), "The Plan Detail button not displaying");
 		
-		String pageTitle = homepage.siteOverviewLink();
-		System.out.println("Title is" +pageTitle);
+	   driver.close();
 		
-	Assert.assertEquals(pageTitle, "Homestead at Sterling Ranch@", "The Title of the window doesn't match");
+	}
+	
+	
+	@Test
+	public void sitePreviewLinkTest() throws InterruptedException, IOException{
 		
-	//	Assert.assertTrue(homepage.siteOverviewLink());
+		Assert.assertTrue(homepage.sitePreviewLink());
+		driver.close();
+	}
+	
+	
+	@Test
+	public void geoSpatialSitePlanJsonLinkTest() throws InterruptedException, IOException{
+		
+		Assert.assertTrue(homepage.geoSpatialSitePlanJsonLink());
+		driver.close();
+		
+	}
+	
+	@Test
+	public void geoSpatialSitePlanSvgGeoLinkTest() throws InterruptedException, IOException{
+		
+		Assert.assertTrue(homepage.geoSpatialSitePlanSvgGeoLink());
+		driver.close();
 		
 	}
 	
 	
 	
+	 
+	/*@Test           // Manually passing data for lot in Manage Lots
+	 public void manualManageLotsFillDataTest() throws InterruptedException{
+		 
+		homepage.manageLotsFillData("Market", "1111", "900SqFeet", "90000", "900B", "900P", "High", "left900", "selenium description", "h no -900/TT, Lawrence lane", "https://www.google.com", "seleniumUrl");
+	 }*/
 	
 	
 	
+	
+	@DataProvider
+	public Object[][] getManageLotData(){
+   Object data[][]= CommonMethods.getTestData(sheetName);
+	return data;	
+	} 
+	
+	//String LotStatus,String DisplayName,String LotSize,String LotPremiumPrice ,String Block,String Phase ,String Elevation ,String Swing ,String Description ,String Address,String ContactURL,String ContactButtonText
+	@Test (dataProvider="getManageLotData")
+	  public void manageLotsFillDataTestExcel(String LotStatus,String DisplayName,String LotSize,String LotPremiumPrice ,String Block,String Phase ,String Elevation ,String Swing ,String Description ,String Address,String ContactURL,String ContactButtonText) throws InterruptedException{
+	 
+	//homepage.manageLotsFillData("Market", "1111", "900SqFeet", "90000", "900B", "900P", "High", "left900", "Selenium Description", "h no -900/TT, Lawrence lane", "https://www.google.com", "seleniumUrl");
+ homepage.ManageLotsFillDataExcel(LotStatus, DisplayName, LotSize, LotPremiumPrice, Block, Phase, Elevation, Swing, Description, Address, ContactURL, ContactButtonText);
+	}
+
+	
+	
+	@Test(priority=11)
+	public void deleteAllLotsInfoLinkTest() throws InterruptedException, IOException{
+		
+	
+		Assert.assertEquals(homepage.deleteAllLotsInfoLink(), true);
+		Assert.assertEquals(homepage.siteOverviewLink.isDisplayed(), false);
+		
+	}
+	
+	
+	@Test(priority=10)
+	public void uploadSVGTest() throws InterruptedException, AWTException{
+		
+		Assert.assertTrue(homepage.uploadSVG());;
+		Assert.assertTrue(homepage.LotId.isDisplayed());
+		
+		
+		
+	}
 	
 	
 	

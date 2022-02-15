@@ -13,19 +13,20 @@
   </test> <!-- SalesArchitectTestCases -->
   <test name="SalesArchitectTestCases(failed)">
     <classes>
+      <class name="WebApp.Salesarchitect.testcases.HomePageTestCases">
+        <methods>
+          <include name="geoSpatialSitePlanJsonLinkTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="manageLotsFillDataTestExcel" invocation-numbers="0 0 0 0"/>
+        </methods>
+      </class> <!-- WebApp.Salesarchitect.testcases.HomePageTestCases -->
       <class name="WebApp.Salesarchitect.testcases.LoginPageTestCases">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- WebApp.Salesarchitect.testcases.LoginPageTestCases -->
-      <class name="WebApp.Salesarchitect.testcases.HomePageTestCases">
-        <methods>
-          <include name="logOffLinkTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- WebApp.Salesarchitect.testcases.HomePageTestCases -->
     </classes>
   </test> <!-- SalesArchitectTestCases(failed) -->
 </suite> <!-- Failed suite [Salesarchitect] -->

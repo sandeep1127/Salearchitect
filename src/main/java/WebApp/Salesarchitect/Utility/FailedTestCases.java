@@ -7,7 +7,7 @@ import org.testng.IAnnotationTransformer;
 import org.testng.annotations.ITestAnnotation;
 import org.testng.util.RetryAnalyzerCount;
 
-public class FailedTestCases implements IAnnotationTransformer {        // This interface has method which will re-run the failed test cases 
+public class FailedTestCases implements IAnnotationTransformer {        // This interface has method which will re-run the failed test cases ( From Naveen Automation)
 
 	
 	

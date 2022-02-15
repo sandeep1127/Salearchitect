@@ -1,14 +1,29 @@
 package WebApp.Salesarchitect.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
 import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.Test;
 
 import WebApp.Salesarchitect.BaseClass.WebBase;
 import WebApp.Salesarchitect.Pages.HomePage;
 import WebApp.Salesarchitect.Pages.LoginPage;
 
+
+@Listeners(CustomListener.class)
 public class LoginPageTestCases extends WebBase {
 	
 	
@@ -25,7 +40,9 @@ public class LoginPageTestCases extends WebBase {
 	 
 	 
 	 
-	 @BeforeMethod
+	 
+	
+	@BeforeMethod
 	 public void setUp() throws IOException{
 		 init();                                                 // STEP 2 : Call init() method of BaseClass to open browser+URL
 		 loginPage = new LoginPage(); 							 // STEP 3 : Creating Object of LOGINPAGE class to use its methods.
@@ -34,8 +51,7 @@ public class LoginPageTestCases extends WebBase {
 	 
 	 
 	// Step 4 : Creating Test Cases
-	
-	@Test (groups="Regression" , priority =1)
+	@Test
 	public void SuperAdminValidLoginTest() throws InterruptedException, IOException{
 		
 		homePage=loginPage.superAdminValidLogin(config.getProperty("username"), config.getProperty("password"));
@@ -44,8 +60,7 @@ public class LoginPageTestCases extends WebBase {
 		log.info("SuperAdmin login test case passed");
 	}
 	
-	
-	@Test (groups="Regression" , priority =2)
+	@Test
 	public void PartnerSuperAdminValidLoginTest(){
 		
 	     
@@ -55,7 +70,7 @@ public class LoginPageTestCases extends WebBase {
 		}
 	
 	
-	@Test (groups="Regression", priority =3)
+	@Test
 	public void testCommunityAdminValidLogin(){
 		
 		loginPage.communityAdminValidLogin();
@@ -63,8 +78,7 @@ public class LoginPageTestCases extends WebBase {
 		log.info("Community Admin login test case passed");
 		}
 
-	
-	@Test (groups="Regression", priority =4)
+	@Test
 	public void SalesRepAdminValidLoginTest(){
 		
 		
@@ -73,8 +87,7 @@ public class LoginPageTestCases extends WebBase {
 		log.info("Sales Representative test case passed");
 		}
 	
-	
-	@Test (groups="Regression", priority =5)
+	@Test
 	public void SalesEditorAdminValidLoginTest(){
 		
 	
@@ -86,15 +99,14 @@ public class LoginPageTestCases extends WebBase {
 		}
 	
 	
-	
-	@Test (groups="Regression" , priority =6)
-      public void InValidLoginTest(){
+	@Test
+	public void InValidLoginTest(){
 		
 		
 		loginPage.invalidLogin();
 		log.info("InValid login test case passed");
-		
 		}
+	
 	
 	
 	
