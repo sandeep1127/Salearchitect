@@ -30,13 +30,14 @@ public class HomePage extends WebBase {
 
 	
 
-	@FindBy(xpath="(//ul[@class='header-nav']/li)[6]")
+	//@FindBy(xpath="(//ul[@class='header-nav']/li)[6]")
+	@FindBy(xpath="//li[normalize-space()='Hello, driver!']")
 	public WebElement userNameLabel;
 
 	@FindBy(xpath="//button[contains(@class,'btn-small')]") 
 	public WebElement apikey;
 	
-	@FindBy(xpath="//div[contains(@class,'modal-body')])[3]")
+	@FindBy(xpath="//div[@class='modal-body' and contains(text(),'kvidxpdy')]")
 	public WebElement apiKeyValue;
 	
 	@FindBy(xpath="//a[text()='New Home Navigator']")
@@ -78,9 +79,12 @@ public class HomePage extends WebBase {
 	@FindBy(xpath="//td[text()='Brandon Park']")
 	public WebElement BrandonPark;
 	
-
+	
 	@FindBy(xpath="//td[text()='Creek Ridge']")
 	public WebElement creekRidge;
+	
+	@FindBy(xpath="//td[text()='Eagle View']")
+	public WebElement eagleView;
 	
 	@FindBy(xpath="//td[text()='Quailhill']")
 	public WebElement Quailhill;
@@ -193,8 +197,38 @@ public class HomePage extends WebBase {
 	@FindBy(xpath="//span[text()='2A-1'and @data-bind='text: ExternalReference']")
 	public WebElement LotId2A1;
 	
+	@FindBy(xpath="//*[name()='svg']//*[local-name()='path' and @id='Lot_41']")
+	public WebElement Lot_41;
 	
 	
+	
+
+	@FindBy(xpath="//a[text()='Upload SVG Master Plan']")
+	public WebElement uploadSVGMasterPlanLink;
+	
+	@FindBy(xpath="//a[text()='Associate SVG Master Plan']")
+	public WebElement associateSVGMasterPlanLink;
+	
+	@FindBy(xpath="//input[@class='input-medium' and @id='name' and @name='name']")
+	public WebElement uploadMasterPlanFileName;
+	
+	@FindBy(xpath="//input[@class='btn btn-primary' and @id='choose-myformfile' and  @value='Choose File']")
+	public WebElement chooseMasterPlanFileButton;
+	
+	@FindBy(xpath="//input[@id='file-upload' and @value='Upload' and @class='btn btn-primary']")
+	public WebElement uploadMasterPlanButton;
+	
+	@FindBy(xpath="//select[@id='masterPlanID' and @name='masterPlanID']")
+	public WebElement clickMasterPlanDropdown;
+	
+	@FindBy(xpath="//input[@id='plan-update' and @class='btn btn-primary']")
+	public WebElement updateMasterPlanButton;
+	
+	@FindBy(xpath="//select[@id='masterPlanID' and @name='masterPlanID']/option/following-sibling::option[1])[1]")
+	public WebElement chooseMasterPlanNameDropdown;
+	
+	@FindBy(xpath="//a[text()='Preview SVG Master Plan']")
+	public WebElement previewSVGMasterPlanLink;
 	
 	
 	
@@ -203,11 +237,11 @@ public class HomePage extends WebBase {
 	public WebDriverWait wait;
 	
 	
-	// initializing Page objects/WebElements
+	// initializing Page objects/WebElements in the Constructor of Page Class
 	public HomePage() throws IOException {
 		PageFactory.initElements(driver,this); 
 		
-		wait =new WebDriverWait (driver, 60);    // using explicit wait
+		wait =new WebDriverWait (driver, 60);    // using explicit wait 
 	}
 	
 	
@@ -221,7 +255,8 @@ public class HomePage extends WebBase {
    
    public boolean verifyUserName(){
 		return userNameLabel.isDisplayed(); 
-	}
+		
+	} 
 	
    
 	public NewHomeNavigatorPage clickNewHomeNavigatorLink() throws IOException {    // return type of this method is NewHomeNavigatorPage since its returning NewHomenavigator class object
@@ -263,7 +298,7 @@ public class HomePage extends WebBase {
 	 public boolean apiKey() throws InterruptedException{
 		
 		apikey.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		boolean isApikeyValue = driver.findElement(By.xpath("(//div[@class='modal-body'])[3]")).isDisplayed();
 		return isApikeyValue;
 		//driver.switchTo().alert();
@@ -292,6 +327,7 @@ public class HomePage extends WebBase {
 	
 	
 	public boolean communitySearchBoxByCommunityName() throws InterruptedException{
+		communitySearchBox.clear();
 		communitySearchBox.sendKeys("Creek Ridge");
 		Thread.sleep(2000);
 	    action = new Actions(driver);                    // OR use communitySearchBoxBtn.click();
@@ -310,9 +346,9 @@ public class HomePage extends WebBase {
 		communitySearchBox.clear();
 		communitySearchBox.sendKeys("EDGEhomes");
 		Thread.sleep(4000);
-		 action = new Actions(driver);
-			action.sendKeys(Keys.ENTER).build().perform();      // OR use communitySearchBoxBtn.click();
-			Thread.sleep(2000);
+		action = new Actions(driver);
+		action.sendKeys(Keys.ENTER).build().perform();      // OR use communitySearchBoxBtn.click();
+		Thread.sleep(2000);
 	
 		boolean IsBuilderSearchResultDisplayed= creekRidge.isDisplayed();
 		return IsBuilderSearchResultDisplayed;
@@ -684,6 +720,87 @@ public class HomePage extends WebBase {
 	
 	
 	
+	public void uploadSVGMasterPlan() throws InterruptedException, AWTException{
+		CommonMethods.scrollToElementClick(eagleView);
+		eagleView.click();
+		CommonMethods.scrollToElementClick(uploadSVGMasterPlanLink);
+		uploadMasterPlanFileName.sendKeys(CommonMethods.addDateTimeStamp());  // Here , i am using the COMMOM METHOD to input a new name  for Master Plan from System automatically each time when this test case will be run.
+		
+		CommonMethods.scrollToElementClick(chooseMasterPlanFileButton);
+		Thread.sleep(2000);
+		Robot robot= new Robot();  // We are using 'ROBOT' class and creating its object here to upload the File coz SendKeys method not working here. 
+	    robot.setAutoDelay(1000); // Its equivalent to Thread.Sleep which is provided by ROBOT class
+		
+	    StringSelection filepath = new StringSelection("E:\\SandeepJavaWorkspace\\Salesarchitect\\TestData\\MasterMap.svg");   // We use 'StringSelection' Class to copy the file path into the clipboard which needs to be uploaded.
+		
+		
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filepath,null);  // Here we are pasting the filepath into clipboard by using ToolKit class.
+		
+		robot.keyPress(KeyEvent.VK_CONTROL);   // We are pressing Ctrl here  and then will press 'v' to paste the file into the 'file name' field of upload file modal window.
+		Thread.sleep(1000);
+		robot.keyPress(KeyEvent.VK_V);  // we pressed CTRL+V till now
+		Thread.sleep(1000);
+		
+		robot.keyRelease(KeyEvent.VK_V);  // we're releasing the key v here
+		robot.keyRelease(KeyEvent.VK_CONTROL); //we're releasing the key CTRL here
+	
+		
+		robot.keyPress(KeyEvent.VK_ENTER);  // We hit ENTER key to upload the file 
+		robot.keyRelease(KeyEvent.VK_ENTER);  // we released the ENTER key
+		Thread.sleep(1000);
+		
+		wait.until(ExpectedConditions.elementToBeClickable(uploadMasterPlanButton));
+		uploadMasterPlanButton.click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.elementToBeClickable(eagleView));
+		eagleView.click();
+	}
+	
+     public void associateSVGMasterPlan() throws InterruptedException{
+	   CommonMethods.scrollToElementClick(eagleView);
+		eagleView.click();
+		CommonMethods.scrollToElementClick(associateSVGMasterPlanLink);
+		
+		Thread.sleep(2000);
+		
+		Select select = new Select(clickMasterPlanDropdown);
+		select.selectByIndex(2);
+	//	clickMasterPlanDropdown
+		updateMasterPlanButton.click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.elementToBeClickable(eagleView));
+		eagleView.click();
+		
+	}
+
+     public Boolean previewSVGMasterPlanLink() throws InterruptedException{
+    	 CommonMethods.scrollToElementClick(BrandonPark);
+    	 BrandonPark.click();
+ 		CommonMethods.scrollToElementClick(previewSVGMasterPlanLink); 
+ 		
+ 		// Now,Switching to master Plan window
+ 		
+ 		Set<String> allWindowsIds= driver.getWindowHandles();
+		
+	// USING ITERATOR() to switch to different window
+		
+		Iterator<String> it=allWindowsIds.iterator();
+		String Parentid= it.next();             // By this it will always move to the Parent Window
+		String childid = it.next();            // Now it will move to next child window which was opened in Parent window.
+		
+		driver.switchTo().window(childid);
+		driver.manage().window().maximize();
+		
+		Boolean islotIdDisplayed = Lot_41.isDisplayed();
+		log.info("Lot number 41 is found");
+		
+		return islotIdDisplayed;
+		
+ 		
+ 		
+ 		
+    	 
+     }
 	
 	
 	
@@ -701,6 +818,61 @@ public class HomePage extends WebBase {
 	
 	
 	
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 	
 	
 	

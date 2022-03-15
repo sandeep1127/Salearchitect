@@ -8,7 +8,7 @@ import org.testng.ITestResult;
 
 import WebApp.Salesarchitect.BaseClass.WebBase;
 
-public class CustomListener extends WebBase implements ITestListener{           // This class is Implementing ITestListner class which contains the pre made method which we implemened to take screenshot of failed test cases only
+public class CustomListener extends WebBase implements ITestListener{           // This class is Implementing ITestListner class which contains the pre made method which we implemented to take screenshot of failed test cases only
 																				// Here , we just implemented just 1 method of this interface which is to take screenshot of failed test cases
 	public CustomListener() throws IOException {
 		super();

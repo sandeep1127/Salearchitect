@@ -1,6 +1,17 @@
-00:06:35,825  INFO devpinoyLogger:61 - Chrome browser opened
-00:06:36,048  INFO devpinoyLogger:95 - browser is maximised
-00:06:36,856  INFO devpinoyLogger:97 - cookies cleared
-00:06:39,740  INFO devpinoyLogger:102 - https://salesarchitect-build.bhitest.com app opened
-00:06:47,134  INFO devpinoyLogger:558 - community name in the community table is clicked
-00:07:05,769  INFO devpinoyLogger:562 - ISP 3.0 JSON link is clicked
+13:05:44,140  INFO devpinoyLogger:61 - Chrome browser opened
+13:05:44,653  INFO devpinoyLogger:95 - browser is maximised
+13:05:44,680  INFO devpinoyLogger:97 - cookies cleared
+13:05:47,566  INFO devpinoyLogger:102 - https://salesarchitect-build.bhitest.com app opened
+13:05:57,532  INFO devpinoyLogger:61 - Chrome browser opened
+13:05:57,713  INFO devpinoyLogger:95 - browser is maximised
+13:05:59,649  INFO devpinoyLogger:97 - cookies cleared
+13:06:17,188 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+13:06:17,189 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+13:06:17,192 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+13:06:17,193 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+13:06:17,194 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/schoudhary/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+13:06:17,967 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+13:06:17,975 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+13:06:17,977 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+13:06:17,979 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+13:06:17,987 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/schoudhary/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

@@ -5,13 +5,14 @@
 
 <listeners>
 <listener class-name= "WebApp.Salesarchitect.Utility.FailedTestCases"/> 
+<listener class-name="WebApp.Salesarchitect.ExtentReportListener.ExtentReporterNG" />
 </listeners>
 
 
   <test name="SalesArchitectTestCases">
     <classes>
-      <class name="WebApp.Salesarchitect.testcases.HomePageTestCases"/>
       <class name="WebApp.Salesarchitect.testcases.LoginPageTestCases"/>
+      <class name="WebApp.Salesarchitect.testcases.HomePageTestCases"/>
       <class name="WebApp.Salesarchitect.BaseClass.WebBase"/>
     </classes>
   </test> <!-- Test2 -->

@@ -53,7 +53,7 @@ public class HomePageTestCases extends WebBase{
 		 navigatorReportsPage = new NavigatorReportsPage();
 		 
 		 
-		 homepage =loginPage.superAdminValidLogin(config.getProperty("username"), config.getProperty("password")); // Step 4 : I have to login each time to go to HOMEPAGE screen.
+		 homepage =loginPage.superAdminValidLogin(config.getProperty("username"), config.getProperty("password")); // Step 4 : I have to login each time to go to HOMEPAGE screen So , i'm including this in my Before Method.
 		 
 	 } 
 	
@@ -96,11 +96,11 @@ public class HomePageTestCases extends WebBase{
 	}
 	
 	
-	@Test (groups="Regression" , priority =6 , enabled=false)
-	public void logOffLinkTest() throws InterruptedException{
-	homepage.logOffLink();
-	Assert.assertTrue(homepage.logOffLink());
-	}
+//	@Test (groups="Regression" , priority =6 , enabled=false)
+//	public void logOffLinkTest() throws InterruptedException{
+//	homepage.logOffLink();
+//	Assert.assertTrue(homepage.logOffLink());
+//	}
 	
 	@Test
 	public void logOffTest(){
@@ -139,7 +139,7 @@ public class HomePageTestCases extends WebBase{
 	
 	@Test
 	public void communitySearchBoxByBuilderNameTest() throws InterruptedException{
-		System.out.println(homepage.communitySearchBoxByBuilderName());
+		
 	Assert.assertTrue(homepage.communitySearchBoxByBuilderName());;
 	}
 	
@@ -252,10 +252,32 @@ public class HomePageTestCases extends WebBase{
 	}
 	
 	
+	@Test
+	public void uploadSVGMasterPlanTest() throws InterruptedException, AWTException{
+		homepage.uploadSVGMasterPlan();
+		
+		
+	}
+	
+	@Test
+	public void associateSVGMasterPlanTest() throws InterruptedException, AWTException{
+		homepage.associateSVGMasterPlan();
+		if (homepage.eagleView.getText().equals("Eagle View")){
+			Assert.assertTrue(homepage.eagleView.getText().equals("Eagle View"), "OOPS Test case of associate master plan has Failed");  // Here  Im checking of 
+			System.out.println("The name of the community for which Masert plan associated is : " + homepage.eagleView.getText());
+		}
+		
+		
+	}
 	
 	
-	
-	
+	@Test
+	public void previewSVGMasterPlanLinkTest() throws InterruptedException{
+		Assert.assertTrue(homepage.previewSVGMasterPlanLink());
+		
+		driver.close();
+		
+	}
 	
 	
 	

@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Salesarchitect">
+              <span class="suite-name border-skipped">Salesarchitect</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Salesarchitect">
+                    <span>E:\SandeepJavaWorkspace\Salesarchitect\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Salesarchitect">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Salesarchitect">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Salesarchitect">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Salesarchitect">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Salesarchitect">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Salesarchitect">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods,  3 skipped,  30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Salesarchitect" class="hide-methods skipped suite-Salesarchitect"> (hide)</a> <!-- hide-methods skipped suite-Salesarchitect -->
+                      <a href="#" panel-name="suite-Salesarchitect" class="show-methods skipped suite-Salesarchitect"> (show)</a> <!-- show-methods skipped suite-Salesarchitect -->
+                    </span>
+                    <div class="method-list-content skipped suite-Salesarchitect">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="geoSpatialSitePlanSvgGeoLinkTest">geoSpatialSitePlanSvgGeoLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="geoSpatialSitePlanSvgGeoLinkTest">geoSpatialSitePlanSvgGeoLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="uploadSVGMasterPlanTest">uploadSVGMasterPlanTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Salesarchitect -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Salesarchitect" class="hide-methods passed suite-Salesarchitect"> (hide)</a> <!-- hide-methods passed suite-Salesarchitect -->
+                      <a href="#" panel-name="suite-Salesarchitect" class="show-methods passed suite-Salesarchitect"> (show)</a> <!-- show-methods passed suite-Salesarchitect -->
+                    </span>
+                    <div class="method-list-content passed suite-Salesarchitect">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.LoginPageTestCases" hash-for-method="InValidLoginTest">InValidLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.LoginPageTestCases" hash-for-method="PartnerSuperAdminValidLoginTest">PartnerSuperAdminValidLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.LoginPageTestCases" hash-for-method="SalesEditorAdminValidLoginTest">SalesEditorAdminValidLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.LoginPageTestCases" hash-for-method="SalesRepAdminValidLoginTest">SalesRepAdminValidLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.LoginPageTestCases" hash-for-method="SuperAdminValidLoginTest">SuperAdminValidLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="associateSVGMasterPlanTest">associateSVGMasterPlanTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="clearSearchLinkTest">clearSearchLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="clickNewHomeNavigatorLinkTest">clickNewHomeNavigatorLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="communitySearchBoxByBuilderNameTest">communitySearchBoxByBuilderNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="communitySearchBoxByCommunityNameTest">communitySearchBoxByCommunityNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="deleteAllLotsInfoLinkTest">deleteAllLotsInfoLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="geoSpatialSitePlanJsonLinkTest">geoSpatialSitePlanJsonLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="geoSpatialSitePlanSvgGeoLinkTest">geoSpatialSitePlanSvgGeoLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="isApikeyValueTest">isApikeyValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="logOffTest">logOffTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="manageAppsTest">manageAppsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="manageLotsFillDataTestExcel(Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium add...)">manageLotsFillDataTestExcel(Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium add...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="manageProspectsButtonTest">manageProspectsButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="manageUsersLinkTest">manageUsersLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="navigatorReportsButtonTest">navigatorReportsButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="partnerConfigurationLinkTest">partnerConfigurationLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="previewSVGMasterPlanLinkTest">previewSVGMasterPlanLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="siteOverviewLinkTest">siteOverviewLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="sitePreviewLinkTest">sitePreviewLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.LoginPageTestCases" hash-for-method="testCommunityAdminValidLogin">testCommunityAdminValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="uploadSVGMasterPlanTest">uploadSVGMasterPlanTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="uploadSVGTest">uploadSVGTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="verifyNextPagerIconTest">verifyNextPagerIconTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesarchitect" title="WebApp.Salesarchitect.testcases.HomePageTestCases" hash-for-method="verifyUserNameTest">verifyUserNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Salesarchitect -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Salesarchitect" class="panel Salesarchitect">
+          <div class="suite-Salesarchitect-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">WebApp.Salesarchitect.testcases.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="geoSpatialSitePlanSvgGeoLinkTest">
+                  </a> <!-- geoSpatialSitePlanSvgGeoLinkTest -->
+                  <span class="method-name">geoSpatialSitePlanSvgGeoLinkTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[name()=&apos;svg&apos;]//*[local-name()=&apos;polygon&apos; and @id=&apos;Lot_81&apos;]&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.17.10.238&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b4a03223e5695be856cc4662182b902
+*** Element info: {Using=xpath, value=//*[name()=&apos;svg&apos;]//*[local-name()=&apos;polygon&apos; and @id=&apos;Lot_81&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanSvgGeoLink(HomePage.java:648)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanSvgGeoLinkTest(HomePageTestCases.java:201)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="geoSpatialSitePlanSvgGeoLinkTest">
+                  </a> <!-- geoSpatialSitePlanSvgGeoLinkTest -->
+                  <span class="method-name">geoSpatialSitePlanSvgGeoLinkTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[name()=&apos;svg&apos;]//*[local-name()=&apos;polygon&apos; and @id=&apos;Lot_81&apos;]&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.17.10.238&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65193}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f8eb52fd0a4ba9b153a99a12fcbc65c
+*** Element info: {Using=xpath, value=//*[name()=&apos;svg&apos;]//*[local-name()=&apos;polygon&apos; and @id=&apos;Lot_81&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at WebApp.Salesarchitect.Pages.HomePage.geoSpatialSitePlanSvgGeoLink(HomePage.java:648)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.geoSpatialSitePlanSvgGeoLinkTest(HomePageTestCases.java:201)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadSVGMasterPlanTest">
+                  </a> <!-- uploadSVGMasterPlanTest -->
+                  <span class="method-name">uploadSVGMasterPlanTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;td role=&quot;gridcell&quot; style=&quot;text-align:center;&quot; title=&quot;...&quot; aria-describedby=&quot;Communities_cell.Name&quot;&gt;Eagle View&lt;/td&gt; is not clickable at point (376, 12). Other element would receive the click: &lt;div class=&quot;modal-backdrop fade in&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EXIPC0120&apos;, ip: &apos;172.17.10.238&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\SCHOUD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d3d321a477b64640f0244ba742f387d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at WebApp.Salesarchitect.Pages.HomePage.uploadSVGMasterPlan(HomePage.java:755)
+	at WebApp.Salesarchitect.testcases.HomePageTestCases.uploadSVGMasterPlanTest(HomePageTestCases.java:257)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Salesarchitect-class-skipped -->
+          <div class="suite-Salesarchitect-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebApp.Salesarchitect.testcases.LoginPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InValidLoginTest">
+                  </a> <!-- InValidLoginTest -->
+                  <span class="method-name">InValidLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PartnerSuperAdminValidLoginTest">
+                  </a> <!-- PartnerSuperAdminValidLoginTest -->
+                  <span class="method-name">PartnerSuperAdminValidLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SalesEditorAdminValidLoginTest">
+                  </a> <!-- SalesEditorAdminValidLoginTest -->
+                  <span class="method-name">SalesEditorAdminValidLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SalesRepAdminValidLoginTest">
+                  </a> <!-- SalesRepAdminValidLoginTest -->
+                  <span class="method-name">SalesRepAdminValidLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SuperAdminValidLoginTest">
+                  </a> <!-- SuperAdminValidLoginTest -->
+                  <span class="method-name">SuperAdminValidLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCommunityAdminValidLogin">
+                  </a> <!-- testCommunityAdminValidLogin -->
+                  <span class="method-name">testCommunityAdminValidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Salesarchitect-class-passed -->
+          <div class="suite-Salesarchitect-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebApp.Salesarchitect.testcases.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="associateSVGMasterPlanTest">
+                  </a> <!-- associateSVGMasterPlanTest -->
+                  <span class="method-name">associateSVGMasterPlanTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearSearchLinkTest">
+                  </a> <!-- clearSearchLinkTest -->
+                  <span class="method-name">clearSearchLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickNewHomeNavigatorLinkTest">
+                  </a> <!-- clickNewHomeNavigatorLinkTest -->
+                  <span class="method-name">clickNewHomeNavigatorLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="communitySearchBoxByBuilderNameTest">
+                  </a> <!-- communitySearchBoxByBuilderNameTest -->
+                  <span class="method-name">communitySearchBoxByBuilderNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="communitySearchBoxByCommunityNameTest">
+                  </a> <!-- communitySearchBoxByCommunityNameTest -->
+                  <span class="method-name">communitySearchBoxByCommunityNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAllLotsInfoLinkTest">
+                  </a> <!-- deleteAllLotsInfoLinkTest -->
+                  <span class="method-name">deleteAllLotsInfoLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="geoSpatialSitePlanJsonLinkTest">
+                  </a> <!-- geoSpatialSitePlanJsonLinkTest -->
+                  <span class="method-name">geoSpatialSitePlanJsonLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="geoSpatialSitePlanSvgGeoLinkTest">
+                  </a> <!-- geoSpatialSitePlanSvgGeoLinkTest -->
+                  <span class="method-name">geoSpatialSitePlanSvgGeoLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isApikeyValueTest">
+                  </a> <!-- isApikeyValueTest -->
+                  <span class="method-name">isApikeyValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOffTest">
+                  </a> <!-- logOffTest -->
+                  <span class="method-name">logOffTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageAppsTest">
+                  </a> <!-- manageAppsTest -->
+                  <span class="method-name">manageAppsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageLotsFillDataTestExcel(Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium add...)">
+                  </a> <!-- manageLotsFillDataTestExcel(Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium add...) -->
+                  <span class="method-name">manageLotsFillDataTestExcel</span>
+                  <span class="parameters">(Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium added text. Lot is ready for Sale xl, House no -3600, Law lane xl, Https://www.facebook.com, Selenium LinkXL)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageProspectsButtonTest">
+                  </a> <!-- manageProspectsButtonTest -->
+                  <span class="method-name">manageProspectsButtonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageUsersLinkTest">
+                  </a> <!-- manageUsersLinkTest -->
+                  <span class="method-name">manageUsersLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigatorReportsButtonTest">
+                  </a> <!-- navigatorReportsButtonTest -->
+                  <span class="method-name">navigatorReportsButtonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="partnerConfigurationLinkTest">
+                  </a> <!-- partnerConfigurationLinkTest -->
+                  <span class="method-name">partnerConfigurationLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="previewSVGMasterPlanLinkTest">
+                  </a> <!-- previewSVGMasterPlanLinkTest -->
+                  <span class="method-name">previewSVGMasterPlanLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="siteOverviewLinkTest">
+                  </a> <!-- siteOverviewLinkTest -->
+                  <span class="method-name">siteOverviewLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sitePreviewLinkTest">
+                  </a> <!-- sitePreviewLinkTest -->
+                  <span class="method-name">sitePreviewLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadSVGMasterPlanTest">
+                  </a> <!-- uploadSVGMasterPlanTest -->
+                  <span class="method-name">uploadSVGMasterPlanTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadSVGTest">
+                  </a> <!-- uploadSVGTest -->
+                  <span class="method-name">uploadSVGTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitleTest">
+                  </a> <!-- verifyHomePageTitleTest -->
+                  <span class="method-name">verifyHomePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNextPagerIconTest">
+                  </a> <!-- verifyNextPagerIconTest -->
+                  <span class="method-name">verifyNextPagerIconTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserNameTest">
+                  </a> <!-- verifyUserNameTest -->
+                  <span class="method-name">verifyUserNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Salesarchitect-class-passed -->
+        </div> <!-- panel Salesarchitect -->
+        <div panel-name="test-xml-Salesarchitect" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\SandeepJavaWorkspace\Salesarchitect\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Salesarchitect&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;WebApp.Salesarchitect.Utility.FailedTestCases&quot;/&gt;
+    &lt;listener class-name=&quot;WebApp.Salesarchitect.ExtentReportListener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;SalesArchitectTestCases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WebApp.Salesarchitect.testcases.LoginPageTestCases&quot;/&gt;
+      &lt;class name=&quot;WebApp.Salesarchitect.testcases.HomePageTestCases&quot;/&gt;
+      &lt;class name=&quot;WebApp.Salesarchitect.BaseClass.WebBase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SalesArchitectTestCases --&gt;
+  &lt;test name=&quot;SalesArchitectTestCases(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WebApp.Salesarchitect.testcases.LoginPageTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- WebApp.Salesarchitect.testcases.LoginPageTestCases --&gt;
+      &lt;class name=&quot;WebApp.Salesarchitect.testcases.HomePageTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;geoSpatialSitePlanSvgGeoLinkTest&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;uploadSVGMasterPlanTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- WebApp.Salesarchitect.testcases.HomePageTestCases --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SalesArchitectTestCases(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Salesarchitect --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Salesarchitect" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Salesarchitect</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SalesArchitectTestCases (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">SalesArchitectTestCases(failed) (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Salesarchitect" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Salesarchitect</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">clickNewHomeNavigatorLinkTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">manageAppsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">manageProspectsButtonTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">manageUsersLinkTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">navigatorReportsButtonTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">partnerConfigurationLinkTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomePageTitleTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Salesarchitect" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Salesarchitect</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Salesarchitect');
+function tableData_Salesarchitect() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'uploadSVGTest')
+data.setCell(0, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(0, 3, 59929);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'geoSpatialSitePlanSvgGeoLinkTest')
+data.setCell(1, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(1, 3, 28535);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'geoSpatialSitePlanSvgGeoLinkTest')
+data.setCell(2, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(2, 3, 27065);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'uploadSVGMasterPlanTest')
+data.setCell(3, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(3, 3, 21617);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'uploadSVGMasterPlanTest')
+data.setCell(4, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(4, 3, 21177);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'geoSpatialSitePlanJsonLinkTest')
+data.setCell(5, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(5, 3, 17076);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'associateSVGMasterPlanTest')
+data.setCell(6, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(6, 3, 16832);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'manageLotsFillDataTestExcel')
+data.setCell(7, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(7, 3, 13518);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'communitySearchBoxByBuilderNameTest')
+data.setCell(8, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(8, 3, 13347);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'siteOverviewLinkTest')
+data.setCell(9, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(9, 3, 13114);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'sitePreviewLinkTest')
+data.setCell(10, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(10, 3, 12219);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'geoSpatialSitePlanSvgGeoLinkTest')
+data.setCell(11, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(11, 3, 10894);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'clearSearchLinkTest')
+data.setCell(12, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(12, 3, 10859);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'previewSVGMasterPlanLinkTest')
+data.setCell(13, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(13, 3, 10060);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyNextPagerIconTest')
+data.setCell(14, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(14, 3, 9008);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'deleteAllLotsInfoLinkTest')
+data.setCell(15, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(15, 3, 8170);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testCommunityAdminValidLogin')
+data.setCell(16, 2, 'WebApp.Salesarchitect.testcases.LoginPageTestCases')
+data.setCell(16, 3, 6985);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'SuperAdminValidLoginTest')
+data.setCell(17, 2, 'WebApp.Salesarchitect.testcases.LoginPageTestCases')
+data.setCell(17, 3, 6876);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'communitySearchBoxByCommunityNameTest')
+data.setCell(18, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(18, 3, 6605);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'partnerConfigurationLinkTest')
+data.setCell(19, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(19, 3, 6430);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'manageUsersLinkTest')
+data.setCell(20, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(20, 3, 6168);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'PartnerSuperAdminValidLoginTest')
+data.setCell(21, 2, 'WebApp.Salesarchitect.testcases.LoginPageTestCases')
+data.setCell(21, 3, 6082);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'navigatorReportsButtonTest')
+data.setCell(22, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(22, 3, 5978);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'SalesEditorAdminValidLoginTest')
+data.setCell(23, 2, 'WebApp.Salesarchitect.testcases.LoginPageTestCases')
+data.setCell(23, 3, 5456);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'SalesRepAdminValidLoginTest')
+data.setCell(24, 2, 'WebApp.Salesarchitect.testcases.LoginPageTestCases')
+data.setCell(24, 3, 5413);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'manageProspectsButtonTest')
+data.setCell(25, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(25, 3, 4739);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'clickNewHomeNavigatorLinkTest')
+data.setCell(26, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(26, 3, 3849);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'manageAppsTest')
+data.setCell(27, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(27, 3, 3500);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'isApikeyValueTest')
+data.setCell(28, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(28, 3, 2372);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'InValidLoginTest')
+data.setCell(29, 2, 'WebApp.Salesarchitect.testcases.LoginPageTestCases')
+data.setCell(29, 3, 1774);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'logOffTest')
+data.setCell(30, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(30, 3, 1090);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyUserNameTest')
+data.setCell(31, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(31, 3, 100);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyHomePageTitleTest')
+data.setCell(32, 2, 'WebApp.Salesarchitect.testcases.HomePageTestCases')
+data.setCell(32, 3, 8);
+window.suiteTableData['Salesarchitect']= { tableData: data, tableDiv: 'times-div-Salesarchitect'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Salesarchitect">
+              </div> <!-- times-div-Salesarchitect -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Salesarchitect" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Salesarchitect</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Salesarchitect" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Salesarchitect" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebApp.Salesarchitect.testcases.LoginPageTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">InValidLoginTest</span>
+                <span class="method-start">11498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14384 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PartnerSuperAdminValidLoginTest</span>
+                <span class="method-start">20776 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26858 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">27834 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SalesEditorAdminValidLoginTest</span>
+                <span class="method-start">34153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">40978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SalesRepAdminValidLoginTest</span>
+                <span class="method-start">46835 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52248 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">53571 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SuperAdminValidLoginTest</span>
+                <span class="method-start">59458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">67448 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCommunityAdminValidLogin</span>
+                <span class="method-start">74266 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">81252 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebApp.Salesarchitect.testcases.HomePageTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">82549 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">associateSVGMasterPlanTest</span>
+                <span class="method-start">94689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">111521 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">112750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clearSearchLinkTest</span>
+                <span class="method-start">126890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">137749 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">139645 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">communitySearchBoxByBuilderNameTest</span>
+                <span class="method-start">152935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">166282 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">167528 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">communitySearchBoxByCommunityNameTest</span>
+                <span class="method-start">181248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">187853 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">189096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">geoSpatialSitePlanJsonLinkTest</span>
+                <span class="method-start">202037 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">219113 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">222395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">geoSpatialSitePlanSvgGeoLinkTest</span>
+                <span class="method-start">234593 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">261659 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">263435 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">geoSpatialSitePlanSvgGeoLinkTest</span>
+                <span class="method-start">276619 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">305154 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">307011 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">geoSpatialSitePlanSvgGeoLinkTest</span>
+                <span class="method-start">319649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">330543 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">332759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">isApikeyValueTest</span>
+                <span class="method-start">345768 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">348141 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">349584 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logOffTest</span>
+                <span class="method-start">361468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">362558 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">365243 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manageLotsFillDataTestExcel(Model, selenium01, 3600 Sq feet, 1000.0, BBBxl, PPPxl, Fifth Floorxl, Front xl, This is Selenium add...)</span>
+                <span class="method-start">377136 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">390655 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">391964 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">previewSVGMasterPlanLinkTest</span>
+                <span class="method-start">404660 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">414720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">416350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">siteOverviewLinkTest</span>
+                <span class="method-start">428998 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">442112 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">443943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sitePreviewLinkTest</span>
+                <span class="method-start">456304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">468523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">470518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uploadSVGMasterPlanTest</span>
+                <span class="method-start">482377 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">503995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">505502 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uploadSVGMasterPlanTest</span>
+                <span class="method-start">516917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">538094 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">539689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNextPagerIconTest</span>
+                <span class="method-start">552111 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">561119 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">563084 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitleTest</span>
+                <span class="method-start">578909 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">578917 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">580020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserNameTest</span>
+                <span class="method-start">594017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">594117 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">595472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickNewHomeNavigatorLinkTest</span>
+                <span class="method-start">608253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">612102 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">613176 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manageUsersLinkTest</span>
+                <span class="method-start">630647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">636816 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">638136 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">partnerConfigurationLinkTest</span>
+                <span class="method-start">656800 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">663230 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">664480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manageProspectsButtonTest</span>
+                <span class="method-start">676456 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">681195 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">682231 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manageAppsTest</span>
+                <span class="method-start">692834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">696335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">697755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigatorReportsButtonTest</span>
+                <span class="method-start">709557 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">715535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">716914 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uploadSVGTest</span>
+                <span class="method-start">732467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">792396 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">793250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteAllLotsInfoLinkTest</span>
+                <span class="method-start">804342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">812512 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

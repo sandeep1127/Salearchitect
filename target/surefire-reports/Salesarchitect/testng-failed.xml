@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Salesarchitect]">
+  <listeners>
+    <listener class-name="WebApp.Salesarchitect.Utility.FailedTestCases"/>
+    <listener class-name="WebApp.Salesarchitect.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="SalesArchitectTestCases">
+    <classes>
+      <class name="WebApp.Salesarchitect.testcases.LoginPageTestCases"/>
+      <class name="WebApp.Salesarchitect.testcases.HomePageTestCases"/>
+      <class name="WebApp.Salesarchitect.BaseClass.WebBase"/>
+    </classes>
+  </test> <!-- SalesArchitectTestCases -->
+  <test name="SalesArchitectTestCases(failed)">
+    <classes>
+      <class name="WebApp.Salesarchitect.testcases.LoginPageTestCases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- WebApp.Salesarchitect.testcases.LoginPageTestCases -->
+      <class name="WebApp.Salesarchitect.testcases.HomePageTestCases">
+        <methods>
+          <include name="geoSpatialSitePlanSvgGeoLinkTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="uploadSVGMasterPlanTest"/>
+        </methods>
+      </class> <!-- WebApp.Salesarchitect.testcases.HomePageTestCases -->
+    </classes>
+  </test> <!-- SalesArchitectTestCases(failed) -->
+</suite> <!-- Failed suite [Salesarchitect] -->

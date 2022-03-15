@@ -1,0 +1,15 @@
+WebApp\Salesarchitect\Pages\NewHomeNavigatorPage.class
+WebApp\Salesarchitect\Utility\FailedTestCases.class
+WebApp\Salesarchitect\Utility\Xls_Reader.class
+WebApp\Salesarchitect\BaseClass\WebBase.class
+WebApp\Salesarchitect\Pages\NavigatorReportsPage.class
+WebApp\Salesarchitect\Pages\PartnerConfigurationPage.class
+WebApp\Salesarchitect\Pages\LoginPage.class
+WebApp\Salesarchitect\ExtentReportListener\ExtentReporterNG.class
+WebApp\Salesarchitect\Pages\HomePage.class
+WebApp\Salesarchitect\Pages\ManageProspectsPage.class
+WebApp\Salesarchitect\Utility\RetryAnalyzer.class
+WebApp\Salesarchitect\Utility\WebEventListener.class
+WebApp\Salesarchitect\Pages\ManageUsersPage.class
+WebApp\Salesarchitect\Common\CommonMethods.class
+WebApp\Salesarchitect\Pages\ManageAppsPage.class

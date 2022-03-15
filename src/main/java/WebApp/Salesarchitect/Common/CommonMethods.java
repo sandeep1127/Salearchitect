@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.compress.archivers.dump.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -78,13 +81,22 @@ public class CommonMethods extends WebBase{
 	
 		
 		
-	//FileUtils.copyFile(scrFile, new File(currentDir + "/ErrorScreenshots/" + System.currentTimeMillis() + ".png"));    //FILEUTILS here is giving error at present so i used the FileHandler class in below line but it doesnt work
+	//FileUtils.copyFile(scrFile, new File(currentDir + "/ErrorScreenshots/" + System.currentTimeMillis() + ".png"));                               //FILEUTILS here is giving error at present so i used the FileHandler class in below line but it doesnt work, so i commented it 
 	//	FileHandler.copy(scrFile, new File("E:\\SandeepJavaWorkspace\\Salesarchitect\\FailedScreenShots" + System.currentTimeMillis() + ".png"));
 	}
 	
 	
-	
-	
+	// METHOD : To add current time Stamp
+public static String addDateTimeStamp(){
+		
+		SimpleDateFormat df=new SimpleDateFormat("dd_MMM_yyyy_HH_MM_SS");   // Here we created object of SimpleDateFormat Class where we passed our desired date format in which we want the current date with time.
+		Date date=new Date();                                              // Here, object is created to get the current time from our System.
+		String currentTime= df.format(date);								// Here , we are using the method to format/convert the System time into our desired format.
+		return currentTime;
+		
+		// System.out.println(System.currentTimeMillis());   we can also use simply this method directly as well , bit it wont give the time in our desired format
+	}
+ 	
 	
 	
 	
